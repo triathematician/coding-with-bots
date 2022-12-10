@@ -1,3 +1,10 @@
+//
+// "colorful.kts" built with ChatGPT to draw a bunch of circles in ascii art with random colors and overlaid text
+//   - highly iterative, beginning with getting it to draw a circle with ascii art
+//   - took some massaging to get it to draw multiple circles
+//   - adding a banner took quite a bit of work -- it drew in the center, but spacing was weird and it had a lot of trouble with the border
+//
+
 import java.util.Random
 import kotlin.math.absoluteValue
 

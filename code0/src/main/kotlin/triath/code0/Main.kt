@@ -1,3 +1,7 @@
+//
+// "HelloWorld" TornadoFx app built with ChatGPT
+//   - initially assumed inexperience with getting projects up and running, so lots of asking it to debug/fix dir structures, pom's, versions, etc.
+//
 package triath.code0
 
 import tornadofx.*
