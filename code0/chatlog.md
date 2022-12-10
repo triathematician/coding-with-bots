@@ -573,7 +573,7 @@ class Main: App() {
 ```
 In this example
 
-### thank you, i put the main method inside the companion object, and it works now.
+## thank you, i put the main method inside the companion object, and it works now.
 You're welcome! I'm glad that the solution I provided was able to help you resolve the issue with the mvn exec:java command. It sounds like you were able to fix the issue by defining the main method inside the companion object in the Main class. This is correct, and it should allow the mvn exec:java command to find and execute the main method correctly.
 
 In Kotlin, the companion object is a special type of object that is associated with a class. It can be used to define static methods and properties that are associated with the class, and which can be accessed without an instance of the class. In this case, the main method is defined inside the companion object in the Main class, so it is defined as a static method that can be accessed without an instance of the Main class.
@@ -581,3 +581,30 @@ In Kotlin, the companion object is a special type of object that is associated w
 By defining the main method inside the companion object, you are also able to use the @JvmStatic annotation to make the main method visible to the JVM. This is necessary because the mvn exec:java command is a Java command, and it is executed by the JVM. The @JvmStatic annotation allows the JVM to find and execute the main method in the Main class, even though it is defined inside the companion object in a Kotlin file.
 
 I hope this explanation helps! If you have any other questions or if you encounter any other issues, please feel free to ask for help. I'm here to assist you.
+
+## okay, one last thing, can you show me how to push this code to a repository? i already cloned the remote repo, just need to push my code.
+Sure, I'd be happy to help you push your code to a remote repository. To push your code to a repository, you will need to use the git command from the command line. git is a version control system that allows you to track and manage changes to your code, and to collaborate with other developers on a project.
+
+To push your code to a remote repository, follow these steps:
+
+1. Open a command-line interface, such as a terminal window or command prompt, on your computer.
+
+2. Navigate to the local directory that contains your code. This is the directory that you want to push to the remote repository.
+
+3. Use the git status command to check the status of your code. This command will display a list of files that have been modified or added, as well as any files that have not yet been added to the git repository.
+
+4. Use the git add command to add any new files or changes to the git repository. You can specify the specific files that you want to add, or you can use the . or * wildcards to add all files. For example:
+```
+git add .
+```
+Use the git commit command to commit your changes to the git repository. This will create a new commit, which is a snapshot of your code at a specific point in time. You can add a message to the commit to describe the changes that you made. For example:
+```
+git commit -m "Added new files and changes"
+```
+Use the git push command to push your code to the remote repository. This will upload your code and the associated commit history to the remote repository, so that other developers can access it. You can specify the name of the remote repository and the branch that you want to push to. For example:
+```
+git push origin master
+```
+In this example, the git push command is used to push the code to the origin remote repository, on the master branch. The exact syntax and arguments for the git push command may vary depending on your specific project and repository configuration. For more information and detailed instructions on using the git command to push your code to a remote repository, you can refer to the git documentation and tutorials.
+
+Note that you will need to have access to the remote repository in order to be able to push your code to it. This typically requires that you have a user account on the remote repository hosting service, and that you have been granted access to the
